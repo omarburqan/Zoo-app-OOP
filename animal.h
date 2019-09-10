@@ -12,7 +12,7 @@ class Animal {
 		inline virtual ~Animal();
 		
 	   	String get_attr() const ;
-	   	virtual String get_extra_attr() const = 0;
+	   	virtual String get_extra_attr() const ;
 
 		friend std::ostream& operator<<(std::ostream& os, const Animal &animal);
 		

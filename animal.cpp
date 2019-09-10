@@ -14,6 +14,7 @@ String  Animal::get_attr() const {
        "\nspeed: " << speed ;
 	return res.str().c_str();
 }
+String Animal::get_extra_attr() const { return "" ;}
 
 std::ostream &operator<<(std::ostream &os, const Animal &animal) {
     os <<  animal.get_attr() << animal.get_extra_attr() << "\n";
