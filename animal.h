@@ -3,36 +3,33 @@
 
 #include <iostream>
 #include "string.h"
+#include <sstream> /* stringstream */
 
 class Animal {
     
 	public:
-	 	inline Animal(const String &animal_name,const String &species,const String &life_expentancy,
-				const String &continent,const String &type_food,size_t &speed);
-		inline virtual ~Animal();
+	 	inline Animal(const String &animal_name);
+				
+		virtual inline ~Animal();
 		
-	   	String get_attr() const ;
-	   	virtual String get_extra_attr() const ;
-
+	   	inline const String& get_name() const ;
+		
+		virtual String get_all_attr() const = 0 ;
+		
 		friend std::ostream& operator<<(std::ostream& os, const Animal &animal);
 		
     protected:
-		String animal_name;
-		String species;
-		String life_expentancy;
-		String continent;
-		String type_food;
-		size_t speed;
+		String m_animal_name;
     
 };
-Animal::Animal(const String &animal_name,const String &species,const String &life_expentancy,
-		const String &continent,const String &type_food,size_t &speed)
-    : animal_name(animal_name)
-    , species(species)
-    , life_expentancy(life_expentancy)
-    , continent(continent)
-    , type_food(type_food)
-    , speed(speed)	 {}
+Animal::Animal(const String &animal_name)
+    : m_animal_name(animal_name){}
 
 Animal::~Animal(){ }
+
+const String& Animal::get_name() const {
+	return m_animal_name;
+}
+
+
 #endif //__ANIMAL_H__
