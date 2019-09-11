@@ -1,7 +1,7 @@
 #ifndef __CLOWNFISH_H__
 #define __CLOWNFISH_H__
 
-#include "string.h"
+#include "../string.h"
 #include "fish.h"
 #include <sstream>  /* stringstream */
 

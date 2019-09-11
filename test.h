@@ -2,16 +2,19 @@
 #define __TEST_H__
 
 #include <iostream>
-#include "zoo.h"
+#include "Zoo/zoo.h"
 
-#include "lion.h"
-#include "moneky.h"
-#include "dog.h"
-#include "goose.h"
-#include "snowy_owl.h"
-#include "shark.h"
-#include "clown_fish.h"
-#include "whale.h"
+#include "Mamals/lion.h"
+#include "Mamals/moneky.h"
+#include "Mamals/dog.h"
+
+#include "Bird/goose.h"
+#include "Bird/snowy_owl.h"
+
+#include "Fish/shark.h"
+#include "Fish/clown_fish.h"
+
+#include "Whale/whale.h"
 
 void test();
 

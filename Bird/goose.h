@@ -1,7 +1,7 @@
 #ifndef __GOOSE_H__
 #define __GOOSE_H__
 
-#include "string.h"
+#include "../string.h"
 #include "bird.h"
 #include <sstream>  /* stringstream */
 

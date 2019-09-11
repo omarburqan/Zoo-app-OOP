@@ -2,8 +2,8 @@
 #define __BIRD_H__
 
 #include <sstream>  /* stringstream */
-#include "animal.h"
-#include "string.h"
+#include "../animal.h"
+#include "../string.h"
 
 class Bird: public Animal {
 

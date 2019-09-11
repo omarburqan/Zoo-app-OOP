@@ -1,7 +1,7 @@
 #ifndef __SHARK_H__
 #define __SHARK_H__
 
-#include "string.h"
+#include "../string.h"
 #include "fish.h"
 #include <sstream>  /* stringstream */
 

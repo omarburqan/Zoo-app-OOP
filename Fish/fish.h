@@ -2,9 +2,9 @@
 #define __FISH_H__
 
 #include <sstream>  /* stringstream */
-#include "animal.h"
-#include "string.h"
-#include "FishInterface.h"
+#include "../animal.h"
+#include "../string.h"
+#include "../InterFaces/FishInterface.h"
 
 class Fish: public FishInterface,public Animal{
 

@@ -2,9 +2,9 @@
 #define __MAMAL_H__
 
 #include <sstream>  /* stringstream */
-#include "animal.h"
-#include "string.h"
-#include "MamalInterface.h"
+#include "../animal.h"
+#include "../string.h"
+#include "../InterFaces/MamalInterface.h"
 
 class Mamal : public MamalInterface,public Animal {
 

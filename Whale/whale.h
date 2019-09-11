@@ -1,10 +1,10 @@
 #ifndef __WHALE_H__
 #define __WHALE_H__
 
-#include "string.h"
-#include "animal.h"
-#include "MamalInterface.h"
-#include "FishInterface.h"
+#include "../string.h"
+#include "../animal.h"
+#include "../InterFaces/MamalInterface.h"
+#include "../InterFaces/FishInterface.h"
 
 #include <sstream>  /* stringstream */
 

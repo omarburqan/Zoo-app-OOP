@@ -1,7 +1,7 @@
 #ifndef __DOG_H__
 #define __DOG_H__
 
-#include "string.h"
+#include "../string.h"
 #include "mamal.h"
 #include <sstream>  /* stringstream */
 

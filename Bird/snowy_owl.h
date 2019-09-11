@@ -1,7 +1,7 @@
 #ifndef __SNOWYOIL_H__
 #define __SNOWYOIL_H__
 
-#include "string.h"
+#include "../string.h"
 #include "bird.h"
 
 

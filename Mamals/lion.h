@@ -1,7 +1,7 @@
 #ifndef __LION_H__
 #define __LION_H__
 
-#include "string.h"
+#include "../string.h"
 #include "mamal.h"
 #include <sstream>  /* stringstream */
 
