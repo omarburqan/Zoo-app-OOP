@@ -7,24 +7,24 @@
 
 class Shark : public Fish {
 
-public:
-    inline Shark(const String &animal_name);
-    
-    inline String get_species()const;
-    
-    inline String get_type_food() const;
+	public:
+		inline Shark(const String &animal_name);
+		
+		inline String get_name() const;
+		
+		inline String get_species() const;
+		
+		inline String get_type_food() const;
 
-    inline String get_found_in() const ;
+		inline String get_found_in() const ;
 
-    inline String get_life_expectancy() const ;
+		inline String get_life_expectancy() const ;
 
-    inline String get_speed() const ;
+		inline String get_speed() const ;
 
-    inline size_t lowest_depth() const ;
-    
-    String get_all_attr() const ;
-    
-    inline ~Shark();
+		inline size_t lowest_depth() const ;
+		
+		inline ~Shark();
  	
 };
 Shark::Shark(const String &animal_name)
@@ -33,6 +33,9 @@ Shark::Shark(const String &animal_name)
         
 Shark::~Shark(){}    
 
+String Shark::get_name() const {
+	return m_animal_name;
+}  
         
 String Shark::get_species()const{
 	return "Shark";

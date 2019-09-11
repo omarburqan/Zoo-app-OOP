@@ -3,12 +3,14 @@
 
 #include "string.h"
 #include "bird.h"
-#include <sstream>  /* stringstream */
+
 
 class SnowyOil : public Bird {
 
 public:
     inline SnowyOil(const String &animal_name);
+    
+    inline String get_name() const ;
     
     inline String get_species()const;
     
@@ -24,8 +26,6 @@ public:
 
     inline unsigned char get_wing_span() const ;
     
-    String get_all_attr() const ;
-    
     inline ~SnowyOil();
  	
 };
@@ -37,7 +37,9 @@ SnowyOil::SnowyOil(const String &animal_name)
         
 SnowyOil::~SnowyOil(){}    
 
-        
+String SnowyOil::get_name() const {
+	return m_animal_name;
+}        
 String SnowyOil::get_species()const{
 	return "SnowyOil";
 }

@@ -10,6 +10,8 @@ class Monkey : public Mamal {
 public:
     inline Monkey(const String &animal_name);
     
+    inline String get_name() const ;
+    
     inline String get_species()const;
     
     inline String get_type_food() const;
@@ -24,8 +26,6 @@ public:
 
     inline unsigned char get_young_born() const ;
     
-    String get_all_attr() const ;
-    
     inline ~Monkey();
  	
 };
@@ -37,6 +37,9 @@ Monkey::Monkey(const String &animal_name)
         
 Monkey::~Monkey(){}    
 
+String Monkey::get_name() const {
+	return m_animal_name;
+}  
         
 String Monkey::get_species()const{
 	return "MONKEY";

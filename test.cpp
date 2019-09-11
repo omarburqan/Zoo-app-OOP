@@ -18,6 +18,7 @@ void test(){
 	Shark jaws("Jaws");
 	ClownFish nemo("Nemo");
 	
+	
 	myZoo.add_animal(&simba);
 	myZoo.add_animal(&mufasa);
 	myZoo.add_animal(&rafiki);
@@ -29,6 +30,10 @@ void test(){
 	myZoo.add_animal(&nemo);
 	
 	myZoo.printAnimals();
+	
+	
+	Whale op("Whale");
+	cout << op << endl;
 	
 }
 

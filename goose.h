@@ -10,6 +10,8 @@ class Goose : public Bird {
 public:
     inline Goose(const String &animal_name);
     
+    inline String get_name() const ;
+    
     inline String get_species()const;
     
     inline String get_type_food() const;
@@ -24,8 +26,6 @@ public:
 
     inline unsigned char get_wing_span() const ;
     
-    String get_all_attr() const ;
-    
     inline ~Goose();
  	
 };
@@ -37,7 +37,9 @@ Goose::Goose(const String &animal_name)
         
 Goose::~Goose(){}    
 
-        
+String Goose::get_name() const {
+	return m_animal_name;
+}       
 String Goose::get_species()const{
 	return "Goose";
 }

@@ -12,9 +12,23 @@ class Animal {
 				
 		virtual inline ~Animal();
 		
-	   	inline const String& get_name() const ;
+	   	virtual String get_name() const = 0;
+	   	
+	   	virtual String get_species()const = 0 ;
+    
+		virtual String get_type_food() const = 0;
+
+		virtual String get_found_in() const = 0;
+
+		virtual String get_life_expectancy() const = 0 ;
+
+		virtual String get_speed() const = 0;
 		
-		virtual String get_all_attr() const = 0 ;
+		String get_all_attr() const;
+		
+		
+		virtual String get_extra_attr() const =0;
+		
 		
 		friend std::ostream& operator<<(std::ostream& os, const Animal &animal);
 		
@@ -27,9 +41,6 @@ Animal::Animal(const String &animal_name)
 
 Animal::~Animal(){ }
 
-const String& Animal::get_name() const {
-	return m_animal_name;
-}
 
 
 #endif //__ANIMAL_H__

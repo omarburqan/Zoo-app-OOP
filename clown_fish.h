@@ -10,6 +10,8 @@ class ClownFish : public Fish {
 public:
     inline ClownFish(const String &animal_name);
     
+   	inline String get_name() const ;
+    
     inline String get_species()const;
     
     inline String get_type_food() const;
@@ -22,8 +24,6 @@ public:
 
     inline size_t lowest_depth() const ;
     
-    String get_all_attr() const ;
-    
     inline ~ClownFish();
  	
 };
@@ -33,7 +33,9 @@ ClownFish::ClownFish(const String &animal_name)
         
 ClownFish::~ClownFish(){}    
 
-        
+String ClownFish::get_name() const {
+	return m_animal_name;
+}  
 String ClownFish::get_species()const{
 	return "ClownFish";
 }

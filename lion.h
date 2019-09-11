@@ -10,6 +10,8 @@ class Lion : public Mamal {
 public:
     inline Lion(const String &animal_name);
     
+    inline String get_name() const ;
+    
     inline String get_species()const;
     
     inline String get_type_food() const;
@@ -23,8 +25,7 @@ public:
     inline unsigned char get_duration_of_pregnancy() const ;
 
     inline unsigned char get_young_born() const ;
-    
-    String get_all_attr() const ;
+
     
     inline ~Lion();
  	
@@ -37,7 +38,9 @@ Lion::Lion(const String &animal_name)
         
 Lion::~Lion(){}    
 
-        
+String Lion::get_name() const {
+	return m_animal_name;
+}         
 String Lion::get_species()const{
 	return "LION";
 }

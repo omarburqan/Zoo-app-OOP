@@ -3,7 +3,7 @@
 
 void Zoo::printAnimals(){
 	for (size_t i=0; i < animals.size();i++){
-		cout << "animal No: "<< (i+1) << endl;
+		cout << "animal No: "<< (i+1) ;
 		cout << *animals[i] << endl;
 	}
 }
