@@ -1,5 +1,5 @@
-#ifndef __Dog_H__
-#define __Dog_H__
+#ifndef __DOG_H__
+#define __DOG_H__
 
 #include "string.h"
 #include "mamal.h"
@@ -66,4 +66,4 @@ unsigned char Dog::get_young_born() const {
     return '3';
 }
 
-#endif //__Dog_H__
+#endif //__DOG_H__

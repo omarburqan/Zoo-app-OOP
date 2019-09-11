@@ -1,5 +1,5 @@
-#ifndef __SnowyOil_H__
-#define __SnowyOil_H__
+#ifndef __SNOWYOIL_H__
+#define __SNOWYOIL_H__
 
 #include "string.h"
 #include "bird.h"
@@ -66,4 +66,4 @@ unsigned char SnowyOil::get_wing_span() const {
 	return '5';
 }
 
-#endif //__SnowyOil_H__
+#endif //__SNOWYOIL_H__

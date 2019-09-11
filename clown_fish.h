@@ -1,5 +1,5 @@
-#ifndef __ClownFish_H__
-#define __ClownFish_H__
+#ifndef __CLOWNFISH_H__
+#define __CLOWNFISH_H__
 
 #include "string.h"
 #include "fish.h"
@@ -57,4 +57,4 @@ size_t ClownFish::lowest_depth() const {
 	return 90;
 }
 
-#endif //__ClownFish_H__
+#endif //__CLOWNFISH_H__

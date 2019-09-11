@@ -1,5 +1,5 @@
-#ifndef __Monkey_H__
-#define __Monkey_H__
+#ifndef __MONKEY_H__
+#define __MONKEY_H__
 
 #include "string.h"
 #include "mamal.h"
@@ -66,4 +66,4 @@ unsigned char Monkey::get_young_born() const {
     return '3';
 }
 
-#endif //__Monkey_H__
+#endif //__MONKEY_H__

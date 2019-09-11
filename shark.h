@@ -1,5 +1,5 @@
-#ifndef __Shark_H__
-#define __Shark_H__
+#ifndef __SHARK_H__
+#define __SHARK_H__
 
 #include "string.h"
 #include "fish.h"
@@ -57,4 +57,4 @@ size_t Shark::lowest_depth() const {
 	return 90;
 }
 
-#endif //__Shark_H__
+#endif //__SHARK_H__

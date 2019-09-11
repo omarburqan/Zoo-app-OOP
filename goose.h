@@ -1,5 +1,5 @@
-#ifndef __Goose_H__
-#define __Goose_H__
+#ifndef __GOOSE_H__
+#define __GOOSE_H__
 
 #include "string.h"
 #include "bird.h"
@@ -66,4 +66,4 @@ unsigned char Goose::get_wing_span() const {
 	return '5';
 }
 
-#endif //__Goose_H__
+#endif //__GOOSE_H__
